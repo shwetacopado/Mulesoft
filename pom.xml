@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Replace placeholders with actual values -->
-    <groupId>55c90e13-654c-42bd-92ec-b74d3167e8ac</groupId>
-    <artifactId>copado-mule-project</artifactId>
+    <groupId>64024e0d-9b7d-47d0-8fa0-ce64e5434ab1</groupId>
+    <artifactId>copado-mule-project2</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
@@ -17,7 +17,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <app.runtime>4.4.0</app.runtime>
-        <mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
+        <mule.maven.plugin.version>4.4.0</mule.maven.plugin.version>
     </properties>
 
     <build>
@@ -128,7 +128,7 @@
         <repository>
             <id>anypoint-exchange-v3</id>
             <name>Anypoint Exchange</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/55c90e13-654c-42bd-92ec-b74d3167e8ac/maven</url>
+            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/64024e0d-9b7d-47d0-8fa0-ce64e5434ab1/maven</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
