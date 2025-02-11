@@ -7,7 +7,7 @@
     <groupId>64024e0d-9b7d-47d0-8fa0-ce64e5434ab1</groupId>
     <artifactId>copamule</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>mule-application-copa</packaging>
+    <packaging>mule-application</packaging>
 
     <name>copamule</name>
 
@@ -62,7 +62,7 @@
                         </deploymentSettings>
                     </cloudhub2Deployment>
                     <!-- CloudHub 2.0 deployment settings -->
-                    <classifier>mule-application-copa</classifier>
+                    <classifier>mule-application</classifier>
                 </configuration>
             </plugin>
         </plugins>
