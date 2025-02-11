@@ -45,7 +45,7 @@
                         <connectedAppClientId>${clientid}</connectedAppClientId>
                         <connectedAppClientSecret>${clientsecret}</connectedAppClientSecret>
                         <connectedAppGrantType>client_credentials</connectedAppGrantType>
-                        <applicationName>${appname}</applicationName>
+                        <applicationName>copamule</applicationName>
                         <replicas>${replicas}</replicas>
                         <vCores>${vcores}</vCores>
                         <businessGroupId>64024e0d-9b7d-47d0-8fa0-ce64e5434ab1</businessGroupId>
