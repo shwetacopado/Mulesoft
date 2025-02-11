@@ -5,11 +5,11 @@
 
     <!-- Replace placeholders with actual values -->
     <groupId>64024e0d-9b7d-47d0-8fa0-ce64e5434ab1</groupId>
-    <artifactId>copamule</artifactId>
+    <artifactId>mule-ci-cd-demo</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
-    <name>copamule</name>
+    <name>mule-ci-cd-demo</name>
 
     <!-- Define properties -->
     <properties>
