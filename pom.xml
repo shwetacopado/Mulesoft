@@ -124,12 +124,12 @@
     </pluginRepositories>
 
     <!-- Distribution management -->
-   <!-- <distributionManagement>
+   <distributionManagement>
         <repository>
             <id>anypoint-exchange-v3</id>
             <name>Anypoint Exchange</name>
             <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/64024e0d-9b7d-47d0-8fa0-ce64e5434ab1/maven</url>
             <layout>default</layout>
         </repository>
-    </distributionManagement> -->
+    </distributionManagement> 
 </project>
