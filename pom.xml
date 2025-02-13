@@ -9,7 +9,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
-    <name>copado-mule-sdemo</name>
+    <name>copado-mule-demo</name>
 
     <!-- Define properties -->
     <properties>
@@ -21,35 +21,52 @@
     </properties>
 
     <build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-clean-plugin</artifactId>
-            <version>3.0.0</version>
-    </plugin>
-    <plugin>
-            <groupId>org.mule.tools.maven</groupId>
-            <artifactId>mule-maven-plugin</artifactId>
-            <version>${mule.maven.plugin.version}</version>
-            <extensions>true</extensions>
-            <configuration>
-    <cloudHubDeployment>
-        <uri>https://anypoint.mulesoft.com</uri>
-        <muleVersion>${runtime_version}</muleVersion>
-        <connectedAppClientId>${clientid}</connectedAppClientId>
-        <connectedAppClientSecret>${clientsecret}</connectedAppClientSecret>
-        <region>${region}</region> 
-        <connectedAppGrantType>client_credentials</connectedAppGrantType>
-        <applicationName>${appname}</applicationName>
-        <environment>${environment}</environment>
-        <workers>${workerCount}</workers>
-        <workerType>${workerType}</workerType>
-        <objectStoreV2>true</objectStoreV2>
-    </cloudHubDeployment>
-            </configuration>
-    </plugin>
-    </plugins>
-</build>
+        <plugins>
+            <!-- Maven clean plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.2.0</version>
+            </plugin>
+            <!-- Mule Maven plugin -->
+            <plugin>
+                <groupId>org.mule.tools.maven</groupId>
+                <artifactId>mule-maven-plugin</artifactId>
+                <version>${mule.maven.plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <!-- CloudHub 2.0 deployment settings -->
+                    <cloudhub2Deployment>
+                        <uri>https://anypoint.mulesoft.com</uri>
+                        <provider>${provider}</provider>
+                        <environment>${environment}</environment>
+                        <target>${target}</target>
+                        <muleVersion>${app.runtime}</muleVersion>
+                        <connectedAppClientId>${clientid}</connectedAppClientId>
+                        <connectedAppClientSecret>${clientsecret}</connectedAppClientSecret>
+                        <connectedAppGrantType>client_credentials</connectedAppGrantType>
+                        <applicationName>${appname}</applicationName>
+                        <replicas>${replicas}</replicas>
+                        <vCores>${vcores}</vCores>
+                        <businessGroupId>e7921977-bfe8-4a2c-8219-4912417955ac</businessGroupId>
+                        <properties>
+                            <key>value</key>
+                        </properties>
+                        <!-- Deployment settings -->
+                        <deploymentSettings>
+                            <enforceDeployingReplicasAcrossNodes>false</enforceDeployingReplicasAcrossNodes>
+                            <updateStrategy>recreate</updateStrategy>
+                            <clustered>false</clustered>
+                            <forwardSslSession>false</forwardSslSession>
+                            <lastMileSecurity>false</lastMileSecurity>
+                        </deploymentSettings>
+                    </cloudhub2Deployment>
+                    <!-- CloudHub 2.0 deployment settings -->
+                    <classifier>mule-application</classifier>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <!-- Define dependencies -->
     <dependencies>
