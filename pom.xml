@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Replace placeholders with actual values -->
-    <groupId>e7921977-bfe8-4a2c-8219-4912417955ac</groupId>
+    <groupId>55c90e13-654c-42bd-92ec-b74d3167e8ac</groupId>
     <artifactId>copado-mule-demo</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
@@ -48,7 +48,7 @@
                         <applicationName>${appname}</applicationName>
                         <replicas>${replicas}</replicas>
                         <vCores>${vcores}</vCores>
-                        <businessGroupId>e7921977-bfe8-4a2c-8219-4912417955ac</businessGroupId>
+                        <businessGroupId>55c90e13-654c-42bd-92ec-b74d3167e8ac</businessGroupId>
                         <properties>
                             <key>value</key>
                         </properties>
@@ -128,7 +128,7 @@
         <repository>
             <id>anypoint-exchange-v3</id>
             <name>Anypoint Exchange</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/e7921977-bfe8-4a2c-8219-4912417955ac/maven</url>
+            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/55c90e13-654c-42bd-92ec-b74d3167e8ac/maven</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
