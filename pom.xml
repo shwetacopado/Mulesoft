@@ -5,11 +5,11 @@
 
     <!-- Replace placeholders with actual values -->
     <groupId>e7921977-bfe8-4a2c-8219-4912417955ac</groupId>
-    <artifactId>copado-mule-project</artifactId>
+    <artifactId>copado-mule-demo</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
-    <name>copado-mule-project</name>
+    <name>copado-mule-sdemo</name>
 
     <!-- Define properties -->
     <properties>
